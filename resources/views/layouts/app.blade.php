@@ -15,6 +15,9 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <link rel="stylesheet" href="{{ ('assets/css/bootstrap.min.css') }}">
+    @livewireStyles
 </head>
 <body>
     <div id="app">
@@ -76,5 +79,8 @@
             @yield('content')
         </main>
     </div>
+    <link rel="stylesheet" href="{{ ('assets/js/bootstrap.bundle.min.js') }}">
+    <link rel="stylesheet" href="{{ ('assets/js/jQuery-v3.6.3.min.js') }}">
+    @livewireScripts
 </body>
 </html>
