@@ -9,11 +9,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ ('assets/css/bootstrap.min.css') }}">
+    <!-- Styles -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     @livewireStyles
 </head>
 <body>
@@ -76,8 +78,11 @@
             @yield('content')
         </main>
     </div>
-    <link rel="stylesheet" href="{{ ('assets/js/bootstrap.bundle.min.js') }}">
-    <link rel="stylesheet" href="{{ ('assets/js/jQuery-v3.6.3.min.js') }}">
-    @livewireScripts
+
+    <!-- Scripts -->
+    <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+    @livewireStyles
 </body>
 </html>
