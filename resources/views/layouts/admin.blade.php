@@ -56,6 +56,7 @@
 
     <script src="js/jquery.cookie.js" type="text/javascript"></script>
 
-    @livewireStyles
+    @livewireScripts
+    @stack('script')
 </body>
 </html>
